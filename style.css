@@ -11,3 +11,15 @@
   .mobile-mission{position:relative;z-index:1}
 }
 @media(max-width:360px){.program h3{font-size:24px}.direction-title h3{font-size:28px}}
+
+/* Editorial mobile composition: type crosses the image edges without panels. */
+@media(max-width:700px){
+  .hero{align-items:stretch}
+  .hero-copy{display:contents}
+  .hero-copy h1{order:1;align-self:stretch;z-index:2;font-size:42px;line-height:1.12;margin:0 0 -22px;padding:0;text-shadow:none}
+  .hero-photo{order:2;align-self:flex-end;width:87%;margin:0;aspect-ratio:260/360;object-position:57% center;border-radius:18px}
+  .hero-copy .intro{order:3;align-self:flex-start;z-index:2;width:100%;margin:-39px 0 0;padding:0;background:none;border-radius:0;font-size:13px;line-height:1.65;text-shadow:none}
+  .hero-copy .intro br{display:none}
+  .hero-copy .intro{max-width:265px}
+  .mobile-mission{order:4;margin-top:32px}
+}
